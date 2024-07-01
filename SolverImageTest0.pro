@@ -10,10 +10,12 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mycamera.cpp
+    mycamera.cpp \
+    mycube.cpp
 
 HEADERS += \
-    mycamera.h
+    mycamera.h \
+    mycube.h
 
 FORMS += \
     mycamera.ui
@@ -25,3 +27,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 INCLUDEPATH += C:\Qt-OpenCv\OpenCV-Build\install\include
 LIBS += C:\Qt-OpenCv\OpenCV-Build\lib\libopencv_*.a
+
+INCLUDEPATH +=C:\eigen-3.4.0\eigen-3.4.0
